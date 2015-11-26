@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bookmylot"
+    android:id="@+id/Linearlayout"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:ignore="MergeRootFrame">
+
+
+<EditText
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:inputType="textPostalAddress"
+android:ems="10"
+android:id="@+id/txtlocation"
+android:layout_weight="0.05"
+android:layout_marginTop="15dp"
+android:hint="Enter Location" />
+
+    <Button
+        android:id="@+id/btnDownload" android:enabled="false"
+        android:onClick="buttonClickHandler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="download table" />
+
+<Button
+android:layout_width="200dp"
+android:layout_height="wrap_content"
+android:text="Enter"
+android:id="@+id/MapButton"
+android:layout_gravity="center_horizontal"
+android:layout_marginTop="10dp"
+android:enabled="true" />
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+</LinearLayout>
